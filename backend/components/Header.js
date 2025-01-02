@@ -20,7 +20,7 @@ export default function Header({ handleAsideOpen }) {
 
   return (
     <>
-      <header className="header flex flex-sb fixed  ">
+      <header className="header flex flex-sb ">
         <div className="logo flex gap-2">
           <h1>ADMIN</h1>
           <div className="headerham flex flex-center" onClick={handleAsideOpen}>

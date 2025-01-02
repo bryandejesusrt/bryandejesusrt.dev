@@ -9,7 +9,7 @@ export default async function connectToDatabase() {
     await client.connect();
     return client.db();
   } catch (error) {
-    console.error("Error al intentar conectarse a la base de datos", error);
+    console.error("error to connet data base mongodb", error);
     throw error;
   }
 }

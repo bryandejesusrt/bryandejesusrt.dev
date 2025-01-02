@@ -1,15 +1,6 @@
 import Link from "next/link";
-import { IoHome } from "react-icons/io5";
-import { BsFillPostcardFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { IoMdPricetags } from "react-icons/io";
-import { FaShoppingBag } from "react-icons/fa";
-import { AiFillCode } from "react-icons/ai";
-import { RiGalleryFill } from "react-icons/ri";
-import { MdOutlineDesignServices } from "react-icons/md";
-import { IoMdContact } from "react-icons/io";
-import { FaUserAlt } from "react-icons/fa";
+import { useEffect, useState } from "react";  
 import {
   Bolt,
   Bug,
@@ -20,9 +11,8 @@ import {
   SquareTerminal,
   Store,
   UserRound,
+  NotebookPen,
 } from "lucide-react";
-import { NotebookPen } from "lucide-react";
-import { FaGear } from "react-icons/fa6";
 
 import { active } from "sortablejs";
 
