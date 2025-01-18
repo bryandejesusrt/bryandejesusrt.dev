@@ -48,6 +48,7 @@ export default function EditProduct() {
         <div className="blogsadd">
           <Blog />
         </div>
+        
       </div>
     </>
   );
