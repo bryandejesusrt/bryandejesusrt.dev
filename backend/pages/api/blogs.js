@@ -2,7 +2,6 @@ import Blog from "@/models/Blog";
 import { mongooseConnect } from "@/lib/mongoose";
 
 export default async function handler(req, res) {
-  //if authentificated, connect to MongoDB
   await mongooseConnect();
 
   const { method } = req;

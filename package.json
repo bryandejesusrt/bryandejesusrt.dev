@@ -1,0 +1,15 @@
+{
+  "name": "bryandejesusrt.dev",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "next-auth": "^4.24.11"
+  }
+}

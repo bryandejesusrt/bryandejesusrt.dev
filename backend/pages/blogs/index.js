@@ -5,11 +5,12 @@ import { SquarePen, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { SiBloglovin } from "react-icons/si";
+import { useEffect } from "react";
 
 export default function Blogs() {
   // pagination
-  const [currentPage, setCurrentPage] = useState(1); // for page 1
-  const [perPage] = useState(7);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [perPage] = useState(2);
 
   // search
   const [searchQuery, setSearchQuery] = useState("");
@@ -121,6 +122,34 @@ export default function Blogs() {
               )}
             </tbody>
           </table>
+          {/* for pagination */}
+          {publishedblogs.length === 0 ? (
+            "Blogs not found"
+          ) : (
+            <div className="blogpagination">
+              <button
+                onClick={() => paginate(currentPage - 1)}
+                disabled={currentPage === 1}
+              >
+                Previus
+              </button>
+              {pageNumbers.map((number) => (
+                <button
+                  key={number}
+                  onClick={() => paginate(number)}
+                  className={currentPage === number ? "active" : ""}
+                >
+                  {number}
+                </button>
+              ))}
+              <button
+                onClick={() => paginate(currentPage + 1)}
+                disabled={currentPage === pageNumbers.length}
+              >
+                Next
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </>

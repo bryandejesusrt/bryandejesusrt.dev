@@ -125,6 +125,10 @@ export default function Blog({
     return null;
   }
 
+  if(!redirect){
+    
+  }
+
   function updateImageOrder(images) {
     setImage(images);
   }
